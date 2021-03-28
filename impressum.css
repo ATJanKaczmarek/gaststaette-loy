@@ -25,6 +25,7 @@ h1 {
 a {
     color: white;
     flex: 0.25;
+    text-decoration: none;
 }
 
 .row {

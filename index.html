@@ -1,110 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaststätte Loy - Leckere kroatische Küche am Rande Nürnbergs</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <script src="index.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="home">
-        <i class="fas fa-bars" id="nav-icon" onclick="handleNav()"></i>
-        <nav id="navigation">
-            <ul>
-                <li><a href="#about" onclick="handleNav()">Über Uns</a></li>
-                <li><a href="#gallery" onclick="handleNav()">Galerie</a></li>
-                <li><a href="#menu" onclick="handleNav()">Speisekarte</a></li>
-                <li><a href="#location" onclick="handleNav()">Standort</a></li>
-            </ul>
-        </nav>
+      <i class="fas fa-bars" id="nav-icon" onclick="handleNav()"></i>
+      <nav id="navigation">
+        <ul>
+          <li><a href="#about" onclick="handleNav()">Über Uns</a></li>
+          <li><a href="#gallery" onclick="handleNav()">Galerie</a></li>
+          <li><a href="#menu" onclick="handleNav()">Speisekarte</a></li>
+          <li><a href="#location" onclick="handleNav()">Standort</a></li>
+        </ul>
+      </nav>
 
+      <div>
         <div>
-            <div>
-                <h1>Gaststätte Loy</h1>
-                <h2>Leckere kroatische Küche am Rande Nürnbergs</h2>
-                <p id="phone"><span class="fas fa-phone-square-alt"></span> 0911 503879</p>
-            </div>
-            <div>
-                <a href="#menu">
-                    <div id="menu-button">
-                        <p>Speisekarte</p>
-                    </div>
-                </a>
-            </div>
+          <h1>Gaststätte Loy</h1>
+          <h2>Leckere kroatische Küche am Rande Nürnbergs</h2>
+          <p id="phone">
+            <span class="fas fa-phone-square-alt"></span> 0911 503879
+          </p>
         </div>
+        <div>
+          <a href="#menu">
+            <div id="menu-button">
+              <p>Speisekarte</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <section id="about">
+      <div>
+        <img src="images/foodplate02.png" id="about-image" />
         <div>
-            <img src="images/foodplate02.png" id="about-image">
-            <div>
-                <h2>Herzlich Willkommen in unserem Restaurant!</h2>
-                <div>
-                    <p id="about-p-one">
-                        Bei uns finden Sie leckere Speisen aus der deutschen und der kroatischen Küche.
-                        Ob Suppen, Fleisch, Fisch oder vegetarisches Essen wir bereiten es Ihnen gerne zu.
-                        Seit bereits ... Jahren sind wir für Sie in Laufamholz - am östlichen Rand von Nürnberg -
-                        für sie tätig. Sie erreichen uns einfach mit dem Auto oder zu Fuß. Wir bieten Ihnen ein
-                        gemütliches Ambiente und an warmen Tagen hat unser Biergarten für Sie geöffnet.
-                    </p>
-                    <p id="about-p-two">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Fugit porro nostrum officia
-                        dignissimos modi officiis molestiae repellendus
-                        harum numquam soluta. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Fugit porro nostrum officia
-                        dignissimos modi officiis molestiae repellendus
-                        harum numquam soluta.
-                    </p>
-                </div>
-            </div>
+          <h2>Herzlich Willkommen in unserem Restaurant!</h2>
+          <div>
+            <p id="about-p-one">
+              Bei uns finden Sie leckere Speisen aus der deutschen und der
+              kroatischen Küche. Ob Suppen, Fleisch, Fisch oder vegetarisches
+              Essen wir bereiten es Ihnen gerne zu. Seit bereits ... Jahren sind
+              wir für Sie in Laufamholz - am östlichen Rand von Nürnberg - für
+              sie tätig. Sie erreichen uns einfach mit dem Auto oder zu Fuß. Wir
+              bieten Ihnen ein gemütliches Ambiente und an warmen Tagen hat
+              unser Biergarten für Sie geöffnet.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <section id="gallery">
-        <h2>Galerie</h2>
-        <hr>
-        <div>
-            <img src="images/2017-11-11.jpg" alt="">
-            <img src="images/20190822_185030.jpg" alt="">
-        </div>
+      <h2>Galerie</h2>
+      <hr />
+      <div>
+        <img src="images/2017-11-11.jpg" alt="" />
+        <img src="images/20190822_185030.jpg" alt="" />
+      </div>
     </section>
 
     <section id="menu">
-        <h2>Unsere Speisekarte</h2>
-        <hr>
-        <table>
-            <tr>
-                <th>Speise</th>
-                <th id="menu-price">Preis</th>
-            </tr>
-            <tr>
-                <td>Speise 1</td>
-                <td>15,00€</td>
-            </tr>
-            <tr>
-                <td>Speise 2</td>
-                <td>8,00€</td>
-            </tr>
-            <tr>
-                <td>Speise 3</td>
-                <td>14,75€</td>
-            </tr>
-            <tr>
-                <td>Speise 4</td>
-                <td>32,40€</td>
-            </tr>
-            <tr>
-                <td>Speise 5</td>
-                <td>4,30€</td>
-            </tr>
-            <tr>
-                <td>Speise 6</td>
-                <td>17,50€</td>
-            </tr>
+      <h2>Unsere Speisekarte</h2>
+      <hr />
+      <button class="collapsible" onclick="toggleCollapsible(this)">
+        Vorspeisen aus der fränkischen Küche
+      </button>
+      <div class="content">
+        <table id="menu-table">
+          <tr>
+            <th>Speise</th>
+            <th id="menu-price">Preis</th>
+          </tr>
+          <tr>
+            <td>Weißer oder roter Pressack mit Brot</td>
+            <td>5,80€</td>
+          </tr>
+          <tr>
+            <td>Stadtwurst mit Senf und Brot</td>
+            <td>5,80€</td>
+          </tr>
+          <tr>
+            <td>Bauernplatte kalt mit Brot</td>
+            <td>5,50€</td>
+          </tr>
+          <tr>
+            <td>Bauernschinken mit Brot</td>
+            <td>6,80€</td>
+          </tr>
         </table>
+      </div>
+      <button class="collapsible" onclick="toggleCollapsible(this)">
+        Vorspeisen aus der jugoslawischen Küche
+      </button>
+      <div class="content">
+        <table id="menu-table">
+          <tr>
+            <th>Speise</th>
+            <th id="menu-price">Preis</th>
+          </tr>
+          <tr>
+            <td>Dalmatinischer Prsut mit Oliven</td>
+            <td>10,50€</td>
+          </tr>
+          <tr>
+            <td>Artischockenherzen</td>
+            <td>6,50€</td>
+          </tr>
+          <tr>
+            <td>Shripmps-Cocktail mit Toast und Butter</td>
+            <td>10,50€</td>
+          </tr>
+        </table>
+      </div>
+      <button class="collapsible" onclick="toggleCollapsible(this)">
+        Suppen
+      </button>
+      <div class="content">
+        <table id="menu-table">
+          <tr>
+            <th>Speise</th>
+            <th id="menu-price">Preis</th>
+          </tr>
+          <tr>
+            <td>Boullion mit Ei, Reis oder Frittaten</td>
+            <td>2,80€</td>
+          </tr>
+          <tr>
+            <td>Bayrische Leberknödelsuppe</td>
+            <td>2,80€</td>
+          </tr>
+          <tr>
+            <td>Bohnensuppe</td>
+            <td>2,80€</td>
+          </tr>
+          <tr>
+            <td>Ungarische Gulaschsuppe</td>
+            <td>3,50€</td>
+          </tr>
+          <tr>
+            <td>Consome "Colbert"</td>
+            <td>5,50€</td>
+          </tr>
+        </table>
+      </div>
+      <button class="collapsible" onclick="toggleCollapsible(this)">
+        Warme Vorspeisen
+      </button>
+      <div class="content">
+        <table class="menu-table">
+          <tr>
+            <th>Speise</th>
+            <th id="menu-price">Preis</th>
+          </tr>
+          <tr>
+            <td>Spaghetti venezianischer Art</td>
+            <td>6,50€</td>
+          </tr>
+          <tr>
+            <td>Spaghetti Carbonara</td>
+            <td>6,80€</td>
+          </tr>
+          <tr>
+            <td>Omlette mit Champigons</td>
+            <td>5,50€</td>
+          </tr>
+          <tr>
+            <td>Champigons gebacken mit Sauce Tartar</td>
+            <td>7,50€</td>
+          </tr>
+          <tr>
+            <td>Käse gebacken mit Sauce Tartar</td>
+            <td>6,80€</td>
+          </tr>
+          <tr>
+            <td>Camenbert gebacken mit Preiselbeeren</td>
+            <td>6,50</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <!-- <section id="order">
         <h2>Bestellen</h2>
@@ -157,24 +240,28 @@
         </div>
     </section> -->
     <section id="location">
-        <div>
-            <h2>Hier finden Sie uns</h2>
-            <hr>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4360.98765712431!2d11.157469583056118!3d49.464504103190144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f586f3738ed9f%3A0x5b1b063816d7c573!2sGastst%C3%A4tte%20Loy!5e0!3m2!1sde!2sde!4v1614945826851!5m2!1sde!2sde"
-                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
+      <div>
+        <h2>Hier finden Sie uns</h2>
+        <hr />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4360.98765712431!2d11.157469583056118!3d49.464504103190144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f586f3738ed9f%3A0x5b1b063816d7c573!2sGastst%C3%A4tte%20Loy!5e0!3m2!1sde!2sde!4v1614945826851!5m2!1sde!2sde"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
     </section>
     <footer>
-        <a id="impressum" href="impressum.html">Impressum</a>
-        <p id="copyright">designed by <b>Jan Kaczmarek</b>.
-            <br>
-            Alle Rechte sind dem Betreiber der Website vorbehalten.
-        </p>
-        <p id="last-updated">Zuletzt aktualisiert am: 09.03.2021</p>
+      <a id="impressum" href="impressum.html">Impressum</a>
+      <p id="copyright">
+        designed by <b>Jan Kaczmarek</b>.
+        <br />
+        Alle Rechte sind dem Betreiber der Website vorbehalten.
+      </p>
+      <p id="last-updated">Zuletzt aktualisiert am: 09.03.2021</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
