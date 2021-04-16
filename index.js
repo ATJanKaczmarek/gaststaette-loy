@@ -28,22 +28,6 @@ const extendMenu = () => {
 
 // Collapsibles:
 
-// window.onload = () => {
-//   const collapsibles = document.getElementsByClassName("collapsible");
-
-//   for (let i = 0; i < collapsibles.length; i++) {
-//     collapsibles[i].addEventListener("click", () => {
-//       this.classList.toggle("active");
-//       var content = this.nextElementSibling;
-//       if (content.style.maxHeight){
-//         content.style.maxHeight = null;
-//       } else {
-//         content.style.maxHeight = content.scrollHeight + "px";
-//       }
-//     });
-//   }
-// }
-
 function toggleCollapsible(element) {
   element.classList.toggle("active");
   const content = element.nextElementSibling;
