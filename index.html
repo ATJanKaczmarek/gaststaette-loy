@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <section id="home">
+    <header>
       <i class="fas fa-bars" id="nav-icon" onclick="handleNav()"></i>
       <nav id="navigation">
         <ul>
@@ -25,22 +25,16 @@
       </nav>
 
       <div>
-        <div>
-          <h1>Gaststätte Loy</h1>
-          <h2>Leckere kroatische Küche am Rande Nürnbergs</h2>
-          <p id="phone">
-            <span class="fas fa-phone-square-alt"></span> 0911 503879
-          </p>
-        </div>
-        <div>
-          <a href="#menu">
-            <div id="menu-button">
-              <p>Speisekarte</p>
-            </div>
-          </a>
-        </div>
+        <h1>Gaststätte Loy</h1>
+        <h2>Leckere kroatische Küche am Rande Nürnbergs</h2>
+        <p id="phone">
+          <span class="fas fa-phone-square-alt"></span> 0911 503879
+        </p>
+        <a class="menu-btn" href="#menu">
+          Speisekarte
+        </a>
       </div>
-    </section>
+    </header>
     <section id="about">
       <div>
         <img src="images/foodplate02.png" id="about-image" />
@@ -193,56 +187,6 @@
         </table>
       </div>
     </section>
-    <!-- <section id="order">
-        <h2>Bestellen</h2>
-        <hr>
-        <p>Bestellen sie jetzt ihre Speisen vor ohne anzurufen.</p>
-        <div class="scrollbar">
-            <table>
-                <tr>
-                    <th>Image</th>
-                    <th>Name</th>
-                    <th>Summary</th>
-                    <th>Quantitiy</th>
-                    <th>Price</th>
-                    <th>Buy</th>
-                </tr>
-                <tr>
-                    <td><img src="https://via.placeholder.com/150" style="width: 150px;"></td>
-                    <td>Speise 1</td>
-                    <td>Leckere ... mit ... in Soße</td>
-                    <td><button>+</button><input type="number"><button>-</button></td>
-                    <td class="item-price">15,00€</td>
-                    <td><button onClick="UpdateTotalPrice()"><i class="fas fa-cart-plus"></i> Zur Bestellung hinzufügen</button></td>
-                </tr>
-                <tr>
-                    <td><img src="https://via.placeholder.com/150" style="width: 150px;"></td>
-                    <td>Speise 1</td>
-                    <td>Leckere ... mit ... in Soße</td>
-                    <td><button>+</button><input type="number"><button>-</button></td>
-                    <td class="item-price">15,00€</td>
-                    <td><button><i class="fas fa-cart-plus"></i> Zur Bestellung hinzufügen</button></td>
-                </tr>
-            </table>
-            <span>Total items:</span>
-            <span id="total-price">Total Price: 
-                <script>
-                    function UpdateTotalPrice() {
-                        let items = document.getElementsByClassName("item-price");
-                        let priceSum = 0.00;
-                        for (var i = 0; i < items.length; i++) {
-                            let currentString = items[i].innerText;
-                            currentString = currentString.slice(0, -1);
-                            currentString = currentString.replace(',', '.');
-                            priceSum += parseFloat(currentString, 2);
-                        }
-
-                        const totalPrice = document.getElementById('total-price').innerText = "Total Price: " + priceSum;
-                    }
-                </script> 
-            </span>
-        </div>
-    </section> -->
     <section id="location">
       <div>
         <h2>Hier finden Sie uns</h2>
@@ -265,7 +209,7 @@
         <br />
         Alle Rechte sind dem Betreiber der Website vorbehalten.
       </p>
-      <p id="last-updated">Zuletzt aktualisiert am: 09.03.2021</p>
+      <p id="last-updated">Zuletzt aktualisiert am: 02.05.2021</p>
     </footer>
   </body>
 </html>
