@@ -33,13 +33,14 @@ function toggleCollapsible(element) {
   const content = element.nextElementSibling;
   const table = content.getElementsByTagName("table")[0];
   
-  if (content.style.height) {
-    table.style.height = null;
-    content.style.height = null;
-    content.style.overflow = "hidden";
-  } else {
+  if (element.classList.contains("active")) {
     table.style.height = "fit-content";
     content.style.height = "100%";
+    content.style.display = "block";
     content.style.overflow = "visible";
+  } else {
+    table.style.height = null;
+    content.style.display = "none";
+    content.style.overflow = "hidden";
   }
 }
